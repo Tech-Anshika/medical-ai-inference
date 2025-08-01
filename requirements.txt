@@ -1,0 +1,5 @@
+fastapi
+uvicorn[standard]
+torch          # if using .pth
+onnxruntime    # if using .onnx
+numpy
