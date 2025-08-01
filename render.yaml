@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: medical-ai-server
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python medical_ai_server.py
+    envVars:
+      - key: PORT
+        value: 10000
